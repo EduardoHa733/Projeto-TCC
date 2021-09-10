@@ -1,0 +1,91 @@
+﻿/* Dark Mode styles */
+body.dark-theme {
+  color: rgb(255, 255, 255);
+  background: #000000;
+}
+body.dark-theme a {
+  color: #ffffff;
+}
+body.dark-theme div.card {
+  background-color: #3a3a3a;
+}
+body.dark-theme span.total-cart{
+  color: #000000;
+}
+body.dark-theme td{
+  color: #000000;
+}
+body.dark-theme p.head-pagamento{
+  color: #000000;
+}
+body.dark-theme h5.modal-title{
+  color: #000000;
+}
+body.dark-theme p.dados-pagamento{
+  color: #000000;
+}
+body.dark-theme span.dados-pagamento{
+  color: #000000;
+}
+/* End of Dark Style*/
+
+
+body {
+	color: #222;
+	background: #fff;
+}
+
+a.add-to-cart:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+button.btn-toggle {
+  display: block;
+  margin: auto;
+  background-color: black;
+  border: 2px solid grey;
+  color: white;
+  border-radius: 8px;
+}
+
+button.btn-toggle:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+.card-img-top {
+   width: 200px;
+   height: 200px;
+   align-self: center;
+  }
+
+p.head-pagamento {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-body{
+  padding-left: 12%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+img.imgProd {
+  width: 200px;
+  height: 200px;
+}
+
+.paypalimg {
+  width: 7%;
+  height: 7%;
+}
+
+div.barra-busca {
+  width: 300px;
+  margin: auto;
+}
