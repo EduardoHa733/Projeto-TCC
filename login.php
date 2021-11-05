@@ -1,10 +1,7 @@
 <?php
-/*session_start();
+$_SESSION['logged'] = $_SESSION ['logged'] ?? False;
 
- $servidor = "localhost";
-$usuario = "root";
-$susenha = "";
-$db = "estacionamento";*/ 
+//Parametros para pegar o login/senha
 $login = $_POST['email'];
 $senha = $_POST['senha'];
 
@@ -24,12 +21,14 @@ $senha = $_POST['senha'];
 
 $verifica = $mysqli -> query("SELECT email,senha FROM usuario WHERE email = '$login' AND senha = '$senha'");
 
+//Checa se está valido e redireciona
 if ($verifica && mysqli_num_rows($verifica) == 1){
-  echo "Logado com sucesso";
-  header("Location: estacionamento.html");
+  echo "<script>
+	alert('Bem vindo, $login!'); location= './estacionamento.html';
+	</script>";
 }else{
-  header("Location: index-erro.html");
-}
-
-
+  echo "<script>
+	alert('Usuário ou senha incorretos!'); location= './index.html';
+	</script>";
+};
 ?>

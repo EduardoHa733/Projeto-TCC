@@ -6,17 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
 </head>
-<body onload="mostraPatio()">
+<!-- <body onload="mostraPatio()"> -->
 
 	<div class="header container-fluid">
 		<img id="img_estacionar" src="estacionar.png" alt="estacionar">
-		<center><h2>Estacionamento Inteligente</small></h2></center>
+			<center>
+				<h2>Estacionamento Inteligente</small></h2>
+				<a href="index.html" class="btn btn-primary">Início</a>
+			</center>
 	</div>
 
-	<div id="conteudo" class="container-fluid">
+	<div id="conteudo" class="container-fluid" style="background-color: aliceblue;">
 		<div class="container">
-
-			<div class="jumbotron">
+			<div class="jumbotron" style="background-color: lightskyblue">
 				<form id="login" method="POST" action="login.php">
 					<label for="email">E-mail:</label>
 					<input type="email" id="email" name="email"><br>
@@ -24,11 +26,11 @@
 					<input type="password" id="senha" name="senha"><br>
 					<input type="submit" class="btn btn-primary" name="btn-login" value="Entrar">
 				</form>
-				<h2 id="login-res"></h2>
-			</div>
+				<span id="login-res"></span>
+		</div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
 </body>
 </html>

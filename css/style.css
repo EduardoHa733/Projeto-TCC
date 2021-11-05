@@ -6,7 +6,7 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing, {
+.marketing {
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -20,7 +20,7 @@ body {
   color: white;
   text-align: center;
   text-transform: uppercase; 
-  height: 100px;
+  height: 130px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h2 {
@@ -35,6 +35,11 @@ body {
   padding: 50px;
   margin-top: -30px;
   height: 100%;
+}
+
+.btn-inicio {
+  padding: 20px;
+  background-color: aliceblue;
 }
 
 .pesquisa {
@@ -165,17 +170,17 @@ img {
 
 #mostra {
   margin-left: 350px;
-}
+    }
 #esconde {
   margin-left: 350px;
-}
+    }
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
+  .marketing
   {
     padding-right: 0;
     padding-left: 0;
@@ -185,8 +190,8 @@ img {
     margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+/*   .jumbotron {
     border-bottom: 0;
+  } */
   }
-
 }
