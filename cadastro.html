@@ -15,25 +15,20 @@
 				<a href="index.html" class="btn btn-primary">Início</a>
 			</center>
 	</div>
-
 	<div id="conteudo" class="container-fluid" style="background-color: aliceblue;">
 		<div class="container">
 			<div class="jumbotron" style="background-color: lightskyblue">
-				<form id="login" method="POST" action="login.php">
+				<form id="login" method="POST" action="cadastrar.php">
+					<label for="email">Nome:</label>
+					<input type="nome" id="nome" name="nome"><br>
 					<label for="email">E-mail:</label>
 					<input type="email" id="email" name="email"><br>
 					<label for="senha">Senha:</label>
 					<input type="password" id="senha" name="senha"><br>
 					<input type="submit" class="btn btn-primary" name="btn-login" value="Entrar">
 				</form>
-				<button type="submit" class="btn btn-primary" name="btn-login" onclick="cadastro()">Cadastre-se</button>
-				<script>
-					function cadastro(){
-						window.location.href = 'cadastro.html';
-					}
-				</script>
-				<span id="login-res"></span>
-		</div>
+			</div>
+
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>

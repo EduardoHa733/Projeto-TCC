@@ -1,4 +1,3 @@
-
 document.getElementById('formulario').addEventListener('submit', cadastrarVeiculo);
 
 function cadastrarVeiculo(e){
