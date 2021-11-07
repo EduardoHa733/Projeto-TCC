@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Estacionamento JS</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Estacionamento Inteligente</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<meta charset="utf-8">
 </head>
-<!-- <body onload="mostraPatio()"> -->
-
-	<div class="header container-fluid">
-		<img id="img_estacionar" src="estacionar.png" alt="estacionar">
+<body style="background-image: url(img\\fundo.jpg)">
+	<div class="card top-navbar">
 			<center>
-				<h2>Estacionamento Inteligente</small></h2>
-				<a href="index.html" class="btn btn-primary">Início</a>
+				<h2 class="card-txt">Estacionamento Inteligente</small></h2>
+				<button a href="index.html" class="btn">Início</a>
 			</center>
 	</div>
 
-	<div id="conteudo" class="container-fluid" style="background-color: aliceblue;">
-		<div class="container">
-			<div class="jumbotron" style="background-color: lightskyblue">
+	<div class="card">
+		<div class="card-inside">
 				<form id="login" method="POST" action="login.php">
-					<label for="email">E-mail:</label>
-					<input type="email" id="email" name="email"><br>
-					<label for="senha">Senha:</label>
-					<input type="password" id="senha" name="senha"><br>
-					<input type="submit" class="btn btn-primary" name="btn-login" value="Entrar">
+					<div class="card-txt" id="input-login"><label for="email">E-mail:</label></div>
+					<div class="card-txt" id="input-login"><input type="email" id="email" name="email"><br></div>
+					<div class="card-txt" id="input-login"><label for="senha">Senha:</label></div>
+					<div class="card-txt" id="input-login"><input type="password" id="senha" name="senha"><br></div>
+					<div class="card-txt"><input type="submit" class="btn" value="Entrar"></div>
 				</form>
-				<button type="submit" class="btn btn-primary" name="btn-login" onclick="cadastro()">Cadastre-se</button>
-				<script>
-					function cadastro(){
-						window.location.href = 'cadastro.html';
-					}
-				</script>
-				<span id="login-res"></span>
+					<div class="card-txt"><button class="btn-cadastro" onclick="cadastro()">Cadastre-se</button></div>
 		</div>
+	</div>
+				<span id="login-res"></span>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- <script src="js/main.js"></script> -->
+	<script>
+		function cadastro(){
+			window.location.href = 'cadastro.html';
+		}
+	</script>
 </body>
 </html>

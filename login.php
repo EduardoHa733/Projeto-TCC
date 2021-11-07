@@ -19,7 +19,7 @@ if ($mysqli -> connect_errno){
 $login = mysqli_real_escape_string($mysqli, $_POST['email']);
 $senha = $_POST['senha'];
 
-$verifica = $mysqli -> query("SELECT email,senha,nome FROM usuario WHERE email = '$login' AND senha = '$senha' AND nome = '$nome'");
+$verifica = $mysqli -> query("SELECT email,senha FROM usuario WHERE email = '$login' AND senha = '$senha'");
 
 //Checa se está valido e redireciona
 if ($verifica && mysqli_num_rows($verifica) == 1){

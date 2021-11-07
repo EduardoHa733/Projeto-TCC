@@ -1,0 +1,89 @@
+/* CSS Customizado */
+body {
+  /* background-image: url("img\\fundo.jpg"); */
+  background-color: #eee6ff;
+}
+
+.top-navbar{
+  background-color: #eee6ff;
+  
+}
+
+.card {
+  position: relative;
+  width: 20%;
+  border: 1px black;
+  border-radius: 40px;
+  padding-left: 50%;
+  margin-top: 2%;
+  margin-left: 40%;
+  outline: none;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-color: #383838;
+  color: #eee6ff;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.40);
+  grid-gap: 30px;
+  padding: 20px;
+  display: grid;
+}
+
+.card-inside {
+  position: relative;
+  border-radius: 20px;
+}
+
+.card-txt {
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color:rgb(0, 0, 0);
+}
+
+.btn-cadastro{
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.btn:hover{
+  background-color:#ffffff;
+  color: black;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.90);
+}
+
+.btn-cadastro:hover{
+  background-color:#ffffff;
+  color: black;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.90);
+}
+
+input[type=text]{
+  width: 100%;
+}
+
+input[type=text]:focus{
+border: 3px solid black;
+}
+
+@media only screen and (max-width:950px) {
+  #input-login {
+    box-sizing: border-box;
+    resize: horizontal;
+    float: left;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .card-txt {
+    font-size:medium;
+  }
+  .card-inside {
+    padding: 0%;
+  }  
+}
