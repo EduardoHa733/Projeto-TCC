@@ -23,47 +23,37 @@
 	</div>
 
 	<div class="card">
-	<div class="patio">
-	<h1>Pátio
-	</table>
-	</div>
+		<div class="card-estacionamento">
+			<span id="vaga">Vaga</span>
+		</div>
+		<button id="addVaga" onclick="estacionamento(addPatio)">Adicionar Vaga ao Pátio</button>
 	</div>
 
-
-	<div class="card">
-	<div class="veiculo-atual" id ="veiculo-atual">
-	<table>
-		<thead>
-			<tr>
-				<th>Proprietário</th>
-				<th>Veiculo</th>
-				<th>Modelo</th>
-				<th>Valor a Pagar</th>
-				<th>Horas</th>
-				<th>Dias</th>
-		</thead>
-		<tbody id="veiculosPatio"></tbody>
-	</table>
-	</div>
+		<div class="card">
+		<form id="formulario">
+		<span>Carro<br>
+		<input type="text" id="carro" class="form-control" placeholder="Nome do Veículo...">
+		<br>
+		<span>Placa<br>
+		<input type="text" id="placa" class="form-control" placeholder="Placa do Veículo...">
+		<button type="submit" class="addVaga" id="addVaga">Adicionar Veículo</button>
+		</div>
+		</form>
 	</div>
 
 	<div class="card">
-	<div class="veiculos-registrados">
+	<div class="add-veiculo">
 	<table>
 		<thead>
 			<tr>
-				<th>Proprietário</th>
 				<th>Veiculo</th>
-				<th>Modelo</th>
-				<th>Ano</th>
-				<th>Data de Cadastro</th>
+				<th>Veiculo</th>
+				<th>Veiculo</th>
 		</thead>
-		<tbody id="veiculosHistorico"></tbody>
+		<tbody id="patio"></tbody>
 	</table>
 	</div>
 	</div>
-
-
 
 <script src="js/park.js"></script>
 </body>
