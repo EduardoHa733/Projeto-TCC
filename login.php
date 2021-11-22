@@ -4,10 +4,10 @@
 include('conexao.php');
 
 //Parametros para pegar o login/senha
-$login = $_POST['email'];
+$login = $_POST['login'];
 $senha = $_POST['senha'];
 
-$query = "SELECT email,senha,nome FROM usuario WHERE email = '$login' AND senha = '$senha'";
+$query = "SELECT login,senha,nome FROM usuario WHERE login = '$login' AND senha = '$senha'";
 
 $resultado = mysqli_query($conexao, $query);
 
