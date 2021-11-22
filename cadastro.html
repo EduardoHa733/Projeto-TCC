@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Estacionamento Inteligente</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8">
+</head>
+<body style="background-image: url(img\\fundo.jpg)">
+	<div class="card top-navbar">
+			<center>
+				<img src="img/logo.png" id="logo-front">
+				<h2 class="card-txt">Estacionamento Inteligente</small></h2>
+				<form action="index.html">
+				<button a href="index.html" class="btn-top">Início</a>
+				</form>
+				<form action="index.html">
+				<button a href="index.html" class="btn-top">Local</a>
+				</form>
+				<form action="index.html">
+				<button class="btn-top">Sobre</a>
+				</form>
+			</center>
+	</div>
+
+
+    <div class="card">
+		<div class="card-inside">
+            <form action="processa.php" method="POST">
+                <div class="field">
+                    <div class="control">
+                    <div class="card-txt" id="input is-large"><label for="nome">Nome:</label></div>
+                    <div class="card-txt" id="input is-large"><input type="text" id="nome" name="nome"><br></div>
+					<div class="card-txt" id="input is-large"><label for="login"><ion-icon name="mail-outline"></ion-icon>Login:</label></div>
+					<div class="card-txt" id="input is-large"><input type="text" id="login" name="login"><br></div>
+					<div class="card-txt" id="input is-large"><label for="senha">Senha:</label></div>
+					<div class="card-txt" id="input is-large"><input type="password" id="senha" name="senha"><img src="img/eye-off-outline.svg" alt="Mostrar/Esconder Senha" id="olhopss" onclick="eyePss()"><br></div>
+					
+				</form>
+					<div class="card-txt"><button type="submit" class="btn-cadastro">Cadastrar</button>
+		</div>
+	</div>
+
+
+
+<script src="js/park.js"></script>
+</body>
+</html>
