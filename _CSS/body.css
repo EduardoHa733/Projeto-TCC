@@ -1,0 +1,46 @@
+body {
+    background-color: #343434;
+    overflow-x: hidden;
+}
+
+.program {
+    font-family: Comic Sans MS;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.foto-legenda {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+p {
+    color: white;
+    font-size: 15pt;
+}
+
+.deficiente-legenda {
+    max-width: 21%;
+    max-height: 21%;
+}
+
+.veiculo {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+
+.buttons {
+    padding-bottom: 50px;
+}
+
+.verticalLine {
+    width: 1;
+    size: 500;
+  }
+
+  #linha-vertical {
+    height: 200px;
+    border-right: 1px solid white;
+}
